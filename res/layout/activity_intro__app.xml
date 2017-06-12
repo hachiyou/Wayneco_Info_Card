@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lin.waynecobusinessapp.Intro_APP">
+
+    <ImageView
+        android:id = "@+id/CompanyLogo"
+        android:scaleType = "centerInside"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_alignParentTop = "true"
+        android:layout_marginTop = "8dp"
+        android:src = "@drawable/logo"
+        />
+
+    <TextView
+        android:id ="@+id/CompanyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wayneco International Group"
+        android:layout_below="@id/CompanyLogo"
+        android:layout_centerHorizontal="true"
+        android:padding = "16dp"
+        android:textSize = "25sp"
+        />
+
+    <View
+        android:id = "@+id/Separator"
+        android:layout_width = "match_parent"
+        android:layout_height = "1dp"
+        android:background = "@android:color/black"
+        android:layout_below = "@id/CompanyName"
+        android:layout_marginLeft = "8dp"
+        android:layout_marginRight = "8dp"
+        android:layout_marginBottom = "8dp"
+        />
+
+    <LinearLayout
+        android:id = "@+id/CompanyInformation"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below = "@+id/Separator"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines = "3"
+            android:text =
+                "Address:
+                1050 Grand Street
+                Booklyn, NY 11211"
+            android:paddingLeft = "48dp"
+            android:paddingRight = "8dp"
+            android:paddingTop = "8dp"
+            android:paddingBottom = "8dp"
+            android:textSize = "16sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines = "2"
+            android:text = "Contact Number:
+                (718) 302-6108"
+            android:paddingLeft = "48dp"
+            android:paddingRight = "8dp"
+            android:paddingTop = "8dp"
+            android:paddingBottom = "8dp"
+            android:textSize = "16sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines = "2"
+            android:text = "Email:
+                wayneco22@hotmail.com"
+            android:paddingLeft = "48dp"
+            android:paddingRight = "8dp"
+            android:paddingTop = "8dp"
+            android:paddingBottom = "8dp"
+            android:textSize = "16sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines = "3"
+            android:text = "Business Hours:
+                Mon - Sat
+                08:00 AM ~ 05:30 PM"
+            android:paddingLeft = "48dp"
+            android:paddingRight = "8dp"
+            android:paddingTop = "8dp"
+            android:paddingBottom = "8dp"
+            android:textSize = "16sp"
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
